@@ -1,3 +1,7 @@
 This is C++ binding for 0MQ
 
 The contribution policy is at: http://rfc.zeromq.org/spec:22
+
+Cloned on 2015-10-13 10:00+08
+- Add open function for socket_t
+- Add null argument constructor for socket_t
