@@ -631,7 +631,7 @@ namespace zmq
 
     		// litalidev
 	public:
-		inline open (context_t& context_, int type_) ZMQ_NOTHROW
+		inline void open (context_t& context_, int type_) ZMQ_NOTHROW
         {
             close();
             init(context_, type_);
