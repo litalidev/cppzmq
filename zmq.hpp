@@ -628,7 +628,20 @@ namespace zmq
 
         socket_t (const socket_t&) ZMQ_DELETED_FUNCTION;
         void operator = (const socket_t&) ZMQ_DELETED_FUNCTION;
-    };
+
+    		// litalidev
+	public:
+		inline open (context_t& context_, int type_) ZMQ_NOTHROW
+        {
+            close();
+            init(context_, type_);
+        }
+
+        inline socket_t()
+        {
+            ptr=0;
+        }
+};
 
     class monitor_t
     {
